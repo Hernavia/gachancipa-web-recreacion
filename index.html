@@ -8,22 +8,19 @@
 </head>
 <body>
 
-<!-- Barra superior -->
-<header class="top-bar">
-  <div class="top-bar-container">
-    <div class="top-bar-left">
-      <img src="logo-govco.png" alt="Gobierno de Colombia" class="logo-govco">
-      <span class="lang">EN</span>
-    </div>
-    <div class="top-bar-right">
-      <button class="btn-login">Iniciar sesión</button>
-      <button class="btn-register">Registrarse</button>
-      <input type="text" class="search-input" placeholder="Buscar...">
-    </div>
+<!-- Barra superior pequeña -->
+<header class="top-bar-small">
+  <div class="top-bar-left">
+    <span class="govco">Gobierno de Colombia</span>
+  </div>
+  <div class="top-bar-right">
+    <button class="btn-login">Iniciar sesión</button>
+    <button class="btn-register">Registrarse</button>
+    <input type="text" class="search-input" placeholder="Buscar...">
   </div>
 </header>
 
-<!-- Menú principal -->
+<!-- Menú principal horizontal -->
 <nav class="main-nav">
   <ul>
     <li><a href="#">Inicio</a></li>
@@ -36,47 +33,52 @@
   </ul>
 </nav>
 
-<!-- Sección Iniciar / Trámites -->
-<section class="services">
-  <h2>Iniciar</h2>
-  <h3>Trámites y servicios</h3>
-  <p>Encuentra todos nuestros trámites y servicios que tenemos para ti.</p>
-  <button>Servicio al ciudadano</button>
+<!-- Sección trámites -->
+<section class="services-section gray-bg">
+  <h2>Trámites y servicios</h2>
+  <p>Encuentra todos nuestros trámites y servicios que tenemos para ti</p>
+  <button class="btn-green">Ver todos los trámites y servicios</button>
+
+  <h3>Servicio al ciudadano</h3>
+  <div class="service-buttons">
+    <button>Radicación y consulta PQRSDF</button>
+    <button>Encuesta de satisfacción</button>
+    <button>Escríbele a la alcaldía</button>
+    <button>Nuestros directivos y funcionarios</button>
+  </div>
 </section>
 
 <!-- Noticias -->
-<section class="news">
+<section class="news-section gray-bg">
   <h2>Noticias</h2>
   <p>Novedades y principales acontecimientos de nuestro municipio</p>
+  <!-- espacio para contenido futuro -->
 </section>
 
 <!-- Eventos y redes -->
-<section class="events">
-  <h2>Conoce nuestro municipio</h2>
-  <p>Últimos eventos y noticias en redes sociales</p>
-  <div class="social-media">
-    <span>Instagram</span>
+<section class="events-section gray-bg">
+  <div class="events-left">
+    <h2>Instagram</h2>
+  </div>
+  <div class="events-right">
+    <h2>Eventos</h2>
   </div>
 </section>
 
 <!-- Enlaces de interés -->
-<section class="links">
+<section class="links-section gray-bg">
   <h2>Enlaces de interés</h2>
-  <ul>
-    <li>Contraste</li>
-    <li>Solo texto</li>
-    <li>Reducir letra</li>
-    <li>Aumentar letra</li>
-    <li>Centro de relevo</li>
-    <li>Manual de navegación</li>
-    <li>Accesibilidad universal</li>
-    <li>Ocultar</li>
-    <li>Volver arriba</li>
-  </ul>
+  <p>Ingresa a los siguientes enlaces de interés de la Administración Municipal</p>
+  <div class="interest-buttons">
+    <button>Colombia Compra Eficiente</button>
+    <button>Gobierno Digital</button>
+    <button>PSE</button>
+    <button>Presidencia de la República</button>
+  </div>
 </section>
 
-<!-- Sede principal -->
-<section class="main-office">
+<!-- Contenido de sede en cuadro blanco -->
+<section class="main-office white-box">
   <h2>Sede Electrónica Alcaldía Municipal de Gachancipá</h2>
   <p><strong>Sede principal</strong></p>
   <p>Dirección: Calle 6 N° 2 -10, Gachancipá, Cundinamarca, Colombia.</p>
@@ -86,26 +88,27 @@
   <p>NIT: 899.999.419-1 Código DANE: 25295</p>
   <p>Línea de atención ciudadana: (+57) 313 293 4625</p>
   <p>Correo institucional: contactenos@gachancipa-cundinamarca.gov.co</p>
-  <p>Correo de notificaciones judiciales: notificacionesjudiciales@gachancipa-cundinamarca.gov.co</p>
-</section>
+  <p>Correo de notificaciones judiciales: notificacionesjudiciales@gachancipacundinamarca.gov.co</p>
 
-<!-- Otras sedes y redes -->
-<section class="other-offices">
   <h3>Otras Sedes</h3>
-  <p>Alcaldía Municipal de Gachancipá</p>
   <div class="social-links">
-    <span>Facebook</span> <span>X</span> <span>Youtube</span> <span>Instagram</span>
+    <span>Facebook</span>
+    <span>X</span>
+    <span>Youtube</span>
+    <span>Instagram</span>
+  </div>
+
+  <div class="footer-links">
+    <span>Políticas</span>
+    <span>Mapa del sitio</span>
   </div>
 </section>
 
-<!-- Pie de página -->
+<!-- Pie de página final -->
 <footer class="footer">
-  <ul>
-    <li>Políticas</li>
-    <li>Mapa del sitio</li>
-    <li>Gobierno de Colombia</li>
-    <li>Marca País Colombia</li>
-  </ul>
+  <div class="footer-left">
+    <span>Gobierno de Colombia</span> | <span>Marca País Colombia</span>
+  </div>
 </footer>
 
 </body>
