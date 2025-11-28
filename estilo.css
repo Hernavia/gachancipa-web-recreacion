@@ -1,0 +1,138 @@
+/* ==============================
+   Variables principales
+   ============================== */
+:root {
+    --nombre-entidad: "Alcaldía Municipal de Gachancipá";
+
+    /* Colores */
+    --color-primary: #3366CC;
+    --color-primary-hover: #004884;
+    --color-secondary: #004884;
+    --color-tertiary: #E6EFFD;
+    --color-text: #4b4b4b;
+    --color-enlaces: #3366CC;
+    --color-title: #004884;
+    --color-white: #fff;
+    --color-black: #000;
+
+    /* Botones */
+    --boton-texto-default: #FFFFFF;
+    --boton-texto-hover: #FFFFFF;
+    --boton-fondo-default: var(--color-primary);
+    --boton-fondo-hover: var(--color-primary-hover);
+
+    /* Tipografía */
+    --font-title: 'Montserrat-SemiBold', sans-serif;
+    --font-title-medium: 'Montserrat-Medium', sans-serif;
+    --font-content: 'WorkSans-Regular', sans-serif;
+    --font-content-semibold: 'WorkSans-SemiBold', sans-serif;
+
+    /* Tamaños de fuente */
+    --font-size-xxl: 2.5rem;
+    --font-size-xl: 2rem;
+    --font-size-lg: 1.5rem;
+    --font-size-md: 1rem;
+    --font-size-sm: 0.938rem;
+    --font-size-xs: 0.875rem;
+
+    /* Bordes y radios */
+    --border-radius-default: 0.75rem;
+}
+
+/* ==============================
+   Reset y base
+   ============================== */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-content);
+    font-size: var(--font-size-md);
+    line-height: 1.5;
+    color: var(--color-text);
+    background-color: var(--color-white);
+    overflow-x: hidden;
+}
+
+/* ==============================
+   Enlaces
+   ============================== */
+a {
+    color: var(--color-enlaces);
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.25s ease-in;
+}
+
+a:hover {
+    color: var(--color-primary-hover);
+}
+
+/* ==============================
+   Botones
+   ============================== */
+button,
+.btn {
+    font-family: var(--font-title-medium);
+    font-size: var(--font-size-md);
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius-default);
+    border: none;
+    cursor: pointer;
+    color: var(--boton-texto-default);
+    background-color: var(--boton-fondo-default);
+    transition: background-color 0.25s ease-in;
+}
+
+button:hover,
+.btn:hover {
+    background-color: var(--boton-fondo-hover);
+}
+
+/* ==============================
+   Imágenes
+   ============================== */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-style: none;
+    object-fit: cover;
+}
+
+/* ==============================
+   Titulares
+   ============================== */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-title);
+    color: var(--color-title);
+    line-height: 1.2;
+    margin-bottom: 0.5em;
+}
+
+/* ==============================
+   Contenedores y secciones
+   ============================== */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 2rem 0;
+}
+
+/* ==============================
+   Selección de texto
+   ============================== */
+::selection {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
