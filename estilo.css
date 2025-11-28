@@ -196,36 +196,49 @@ body {
 
 /* Reset básico */
 * { box-sizing: border-box; margin:0; padding:0; }
-body { font-family: 'WorkSans-Regular', sans-serif; color: #4b4b4b; background:#fff; line-height:1.5; }
+body { font-family: 'WorkSans-Regular', sans-serif; color: #4b4b4b; background:#f0f0f0; line-height:1.5; }
 a { text-decoration:none; color: inherit; }
 
-/* Barra superior */
-.top-bar { display:flex; justify-content:center; align-items:center; background: #3366CC; color:#fff; height:60px; position:fixed; top:0; width:100%; z-index:1000; padding:0 1rem; }
-.top-bar-container { width:100%; max-width:1200px; display:flex; justify-content:space-between; align-items:center; }
-.top-bar-left { display:flex; align-items:center; gap:0.5rem; }
-.logo-govco { height:30px; }
-.lang { font-weight:bold; }
-.top-bar-right { display:flex; align-items:center; gap:0.5rem; }
-.top-bar-right button { padding:0.3rem 0.8rem; border:none; border-radius:0.25rem; cursor:pointer; color:#fff; background:#004884; }
+/* Barra superior pequeña */
+.top-bar-small { display:flex; justify-content:space-between; align-items:flex-start; background:#3366CC; color:#fff; height:60px; padding:0.5rem 1rem; }
+.top-bar-left { font-size:0.85rem; font-weight:bold; }
+.top-bar-right { display:flex; flex-direction:column; align-items:flex-end; gap:0.3rem; }
+.top-bar-right button { padding:0.3rem 0.8rem; border:none; border-radius:0.25rem; cursor:pointer; color:#fff; background:#004884; font-size:0.8rem; }
 .top-bar-right button:hover { background:#3366CC; }
-.search-input { padding:0.3rem 0.5rem; border-radius:0.25rem; border:1px solid #ccc; }
+.search-input { padding:0.3rem 0.5rem; border-radius:0.25rem; border:1px solid #ccc; margin-top:0.3rem; }
 
-/* Menú principal */
-.main-nav { margin-top:60px; background:#E6EFFD; }
-.main-nav ul { display:flex; list-style:none; padding:0.5rem 1rem; flex-wrap:wrap; }
+/* Menú principal horizontal */
+.main-nav { background:#dcdcdc; }
+.main-nav ul { display:flex; list-style:none; padding:0.5rem 1rem; }
 .main-nav li { margin-right:1rem; }
-.main-nav a { color:#004884; font-weight:500; }
-.main-nav a:hover { color:#3366CC; }
+.main-nav a { color:#004884; font-weight:500; padding:0.5rem; display:block; }
+.main-nav a:hover { background:#ccc; border-radius:0.25rem; }
 
 /* Secciones */
-section { padding:2rem 1rem; border-bottom:1px solid #ccc; }
-.services button { margin-top:0.5rem; padding:0.5rem 1rem; border:none; border-radius:0.25rem; background:#3366CC; color:#fff; cursor:pointer; }
-.services button:hover { background:#004884; }
+section { padding:2rem 1rem; }
+.gray-bg { background:#e6e6e6; text-align:center; }
+.white-box { background:#fff; padding:2rem; margin:1rem auto; max-width:1200px; }
+
+/* Trámites y botones */
+.services-section h2, .news-section h2, .links-section h2 { margin-bottom:0.5rem; }
+.btn-green { background:#078930; color:#fff; border:none; border-radius:0.5rem; padding:0.5rem 1rem; cursor:pointer; }
+.btn-green:hover { background:#036a44; }
+.service-buttons { display:flex; justify-content:center; flex-wrap:wrap; gap:0.5rem; margin-top:1rem; }
+.service-buttons button { padding:0.5rem 1rem; border-radius:0.5rem; border:none; background:#3366CC; color:#fff; cursor:pointer; }
+.service-buttons button:hover { background:#004884; }
+
+/* Eventos y redes */
+.events-section { display:flex; justify-content:space-between; }
+.events-left, .events-right { width:48%; }
+
+/* Enlaces de interés */
+.interest-buttons { display:flex; justify-content:center; flex-wrap:wrap; gap:0.5rem; margin-top:1rem; }
+.interest-buttons button { padding:0.5rem 1rem; border-radius:0.5rem; border:none; background:#3366CC; color:#fff; cursor:pointer; }
+.interest-buttons button:hover { background:#004884; }
 
 /* Redes sociales */
-.social-media span, .social-links span { margin-right:0.5rem; }
+.social-links { display:flex; justify-content:center; gap:1rem; margin-top:1rem; }
+.footer-links { display:flex; justify-content:center; gap:1rem; margin-top:1rem; }
 
 /* Pie de página */
-.footer { background:#004884; color:#fff; padding:1rem; text-align:center; }
-.footer ul { display:flex; justify-content:center; list-style:none; gap:1rem; }
-
+.footer { background:#004884; color:#fff; padding:1rem; text-align:left; max-width:1200px; margin:0 auto; }
