@@ -136,3 +136,39 @@ h1, h2, h3, h4, h5, h6 {
     background-color: var(--color-primary);
     color: var(--color-white);
 }
+
+/* Barra gov.co simple */
+.govco-topbar {
+    width: 100%;
+    background-color: #0943B5; /* azul gov.co */
+    color: #fff;
+    font-family: var(--font-content);
+    font-size: 0.7rem; /* reducido */
+    line-height: 1.2;
+    padding: 0.25rem 0; /* delgada */
+}
+
+.govco-topbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.govco-topbar a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 0.8rem;
+    transition: color 0.2s;
+}
+
+.govco-topbar a:hover {
+    color: #36c; /* color primario alcaldía */
+}
+
+.govco-text {
+    font-weight: 600;
+}
+
