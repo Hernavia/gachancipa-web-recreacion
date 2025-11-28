@@ -3,112 +3,92 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Alcaldía Municipal de Gachancipá</title>
-<link rel="stylesheet" href="style.css">
+<title>Alcaldía Gachancipá</title>
+<link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 
-<!-- Barra superior pequeña -->
-<header class="top-bar-small">
-  <div class="top-bar-left">
-    <span class="govco">Gobierno de Colombia</span>
-  </div>
-  <div class="top-bar-right">
-    <button class="btn-login">Iniciar sesión</button>
-    <button class="btn-register">Registrarse</button>
-    <input type="text" class="search-input" placeholder="Buscar...">
-  </div>
-</header>
+<!-- Barra superior -->
+<div class="top-bar">
+    <div class="gov-logo">Gobierno de Colombia</div>
+    <div class="user-access">
+        <a href="#">Iniciar sesión</a> | <a href="#">Registrarse</a>
+        <input type="text" placeholder="Buscar...">
+    </div>
+</div>
 
-<!-- Menú principal horizontal -->
+<!-- Navegación -->
 <nav class="main-nav">
-  <ul>
-    <li><a href="#">Inicio</a></li>
-    <li><a href="#">Transparencia y acceso a la información pública</a></li>
-    <li><a href="#">Atención y Servicios a la ciudadanía</a></li>
-    <li><a href="#">Participa</a></li>
-    <li><a href="#">Mi municipio</a></li>
-    <li><a href="#">Nuestra alcaldía</a></li>
-    <li><a href="#">Proyectos</a></li>
-  </ul>
+    <ul>
+        <li>Inicio</li>
+        <li>Transparencia y acceso a la información pública</li>
+        <li>Atención y Servicios a la ciudadanía</li>
+        <li>Participa</li>
+        <li>Mi municipio</li>
+        <li>Nuestra alcaldía</li>
+        <li>Proyectos</li>
+    </ul>
 </nav>
 
-<!-- Sección trámites -->
-<section class="services-section gray-bg">
-  <h2>Trámites y servicios</h2>
-  <p>Encuentra todos nuestros trámites y servicios que tenemos para ti</p>
-  <button class="btn-green">Ver todos los trámites y servicios</button>
+<!-- Trámites y servicios -->
+<section class="trámites">
+    <h2>Trámites y servicios</h2>
+    <p>Encuentra todos nuestros trámites y servicios que tenemos para tí</p>
+    <button class="btn-verde">Ver todos los trámites y servicios</button>
+</section>
 
-  <h3>Servicio al ciudadano</h3>
-  <div class="service-buttons">
-    <button>Radicación y consulta PQRSDF</button>
-    <button>Encuesta de satisfacción</button>
-    <button>Escríbele a la alcaldía</button>
-    <button>Nuestros directivos y funcionarios</button>
-  </div>
+<!-- Servicio al ciudadano -->
+<section class="servicio-ciudadano">
+    <h2>Servicio al ciudadano</h2>
+    <div class="botones-servicio">
+        <button>Radicación y consulta PQRSDF</button>
+        <button>Encuesta de satisfacción</button>
+        <button>Escríbele a la Alcaldía</button>
+        <button>Nuestros directivos y funcionarios</button>
+    </div>
 </section>
 
 <!-- Noticias -->
-<section class="news-section gray-bg">
-  <h2>Noticias</h2>
-  <p>Novedades y principales acontecimientos de nuestro municipio</p>
-  <!-- espacio para contenido futuro -->
+<section class="noticias">
+    <h2>Noticias</h2>
+    <p>Novedades y principales acontecimientos de nuestro municipio</p>
 </section>
 
-<!-- Eventos y redes -->
-<section class="events-section gray-bg">
-  <div class="events-left">
-    <h2>Instagram</h2>
-  </div>
-  <div class="events-right">
-    <h2>Eventos</h2>
-  </div>
+<!-- Conoce el municipio -->
+<section class="municipio">
+    <h2>Conoce nuestro municipio</h2>
+    <p>Últimos eventos y noticias en redes sociales</p>
+</section>
+
+<!-- Eventos / Instagram -->
+<section class="eventos-instagram">
+    <div class="instagram">Instagram</div>
+    <div class="eventos">Eventos</div>
 </section>
 
 <!-- Enlaces de interés -->
-<section class="links-section gray-bg">
-  <h2>Enlaces de interés</h2>
-  <p>Ingresa a los siguientes enlaces de interés de la Administración Municipal</p>
-  <div class="interest-buttons">
-    <button>Colombia Compra Eficiente</button>
-    <button>Gobierno Digital</button>
-    <button>PSE</button>
-    <button>Presidencia de la República</button>
-  </div>
+<section class="enlaces-interes">
+    <h2>Enlaces de interés</h2>
+    <p>Ingresa a los siguientes enlaces de interés de la Administración Municipal</p>
+    <div class="botones-enlaces">
+        <button>Colombia Compra Eficiente</button>
+        <button>Gobierno Digital</button>
+        <button>PSE</button>
+        <button>Presidencia de la República</button>
+    </div>
 </section>
 
-<!-- Contenido de sede en cuadro blanco -->
-<section class="main-office white-box">
-  <h2>Sede Electrónica Alcaldía Municipal de Gachancipá</h2>
-  <p><strong>Sede principal</strong></p>
-  <p>Dirección: Calle 6 N° 2 -10, Gachancipá, Cundinamarca, Colombia.</p>
-  <p>Código Postal: 251010</p>
-  <p>Horario de atención: Lunes a Jueves de 7:00a.m. a 12:30p.m. - 1:30p.m. a 5:00p.m.</p>
-  <p>Viernes de 7:00a.m. a 12:30p.m. - 1:30p.m. a 4:00p.m.</p>
-  <p>NIT: 899.999.419-1 Código DANE: 25295</p>
-  <p>Línea de atención ciudadana: (+57) 313 293 4625</p>
-  <p>Correo institucional: contactenos@gachancipa-cundinamarca.gov.co</p>
-  <p>Correo de notificaciones judiciales: notificacionesjudiciales@gachancipacundinamarca.gov.co</p>
-
-  <h3>Otras Sedes</h3>
-  <div class="social-links">
-    <span>Facebook</span>
-    <span>X</span>
-    <span>Youtube</span>
-    <span>Instagram</span>
-  </div>
-
-  <div class="footer-links">
-    <span>Políticas</span>
-    <span>Mapa del sitio</span>
-  </div>
-</section>
-
-<!-- Pie de página final -->
-<footer class="footer">
-  <div class="footer-left">
-    <span>Gobierno de Colombia</span> | <span>Marca País Colombia</span>
-  </div>
+<!-- Cuadro final -->
+<footer class="cuadro-final">
+    <h3>Sede Electrónica Alcaldía Municipal de Gachancipá</h3>
+    <p>Sede principal</p>
+    <p>Dirección: Calle 6 N° 2 -10, Gachancipá, Cundinamarca, Colombia.</p>
+    <p>Código Postal: 251010</p>
+    <p>Horario de atención: Lunes a Jueves 7:00a.m. - 5:00p.m. / Viernes 7:00a.m. - 4:00p.m.</p>
+    <p>NIT: 899.999.419-1 Código DANE: 25295</p>
+    <p>Línea de atención ciudadana: (+57) 313 293 4625</p>
+    <p>Correo institucional: contactenos@gachancipa-cundinamarca.gov.co</p>
+    <p>Correo de notificaciones judiciales: notificacionesjudiciales@gachancipa-cundinamarca.gov.co</p>
 </footer>
 
 </body>
